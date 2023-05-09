@@ -4,7 +4,7 @@ import styled from 'styled-components/macro';
 import { COLORS, WEIGHTS } from '../../constants';
 import { formatPrice, pluralize, isNewShoe } from '../../utils';
 import Spacer from '../Spacer';
-import Tag from "../Tag";
+import Flag from "../Flag";
 
 const ShoeCard = ({
   slug,
@@ -37,7 +37,7 @@ const ShoeCard = ({
       <Wrapper>
         <ImageWrapper>
           <Image alt="" src={imageSrc} />
-          {variant !== 'default' && <Tag variant={variant} />}
+          {variant !== 'default' && <Flag variant={variant} />}
         </ImageWrapper>
         <Spacer size={12} />
         <Row>
@@ -65,7 +65,7 @@ const ImageWrapper = styled.div`
 `;
 
 const Image = styled.img`
-  width: 340px;
+  width: 100%;
   border-radius: 16px 16px 4px 4px;
 `;
 

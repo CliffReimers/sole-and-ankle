@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 
-import { COLORS } from '../../constants';
+import {COLORS, WEIGHTS} from '../../constants';
 
-const Tag = ({
+const Flag = ({
   variant
 }) => {
   // There are 3 variants possible:
@@ -25,9 +25,11 @@ const Wrapper = styled.article`
   top: 12px;
   right: -4px;
   border-radius: 2px;
-  padding: 6px 10px;
+  height: 32px;
+  padding: 7px 10px;
   font-size: 14px;
   line-height: (16/14);
+  font-weight: ${WEIGHTS.bold};
 `;
 
-export default Tag;
+export default Flag;
